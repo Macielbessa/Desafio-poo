@@ -15,7 +15,7 @@ public class Main {
 
         System.out.println(contaCorrenteDoJõao.getSaldo());
 
-        /**
+
         ContaCorrente contaCorrenteAntonio = new ContaCorrente();
         contaCorrenteAntonio.setCliente("Antonio");
         contaCorrenteAntonio.setSaldo(new BigDecimal(150.00));
@@ -24,7 +24,7 @@ public class Main {
         CaixaEletronico caixaEletronico = new CaixaEletronico();
         caixaEletronico.sacarSaldo(contaCorrenteAntonio, new BigDecimal(50.00));
 
-        System.out.println(contaCorrenteAntonio.getSaldo());*/
+        System.out.println(contaCorrenteAntonio.getSaldo());
 
     }
 }
