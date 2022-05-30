@@ -8,6 +8,10 @@ public class CaixaEletronico {
               corrente.setSaldo(valorAtual);
 
 
-
+        if (valorParaSacar.compareTo(corrente.getSaldo()) < 1){
+            System.out.println("saque realizado");
+        } else{
+            System.out.println("saque");
+        }
     }
 }
