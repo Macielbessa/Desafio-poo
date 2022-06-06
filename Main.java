@@ -9,11 +9,10 @@ public class Main {
         contaCorrenteDoJõao.setCliente("João"); // cliente
         contaCorrenteDoJõao.setSaldo(new BigDecimal (100.00)); // saldo atual
 
-        System.out.println(contaCorrenteDoJõao.getSaldo());
-
-
         CaixaEletronico caixaEletronicoDoJoão = new CaixaEletronico();
         caixaEletronicoDoJoão.sacarSaldo(contaCorrenteDoJõao,new BigDecimal(50.00)); // valor a ser sacado
 
-    }
+        System.out.println(contaCorrenteDoJõao.getSaldo());
+        
+        }
 }
