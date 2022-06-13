@@ -12,7 +12,6 @@ public class Main {
         CaixaEletronico caixaEletronicoDoJoão = new CaixaEletronico();
         caixaEletronicoDoJoão.sacarSaldo(contaCorrenteDoJõao,new BigDecimal(50.00)); // valor a ser sacado
 
-        System.out.println(contaCorrenteDoJõao.getSaldo());
-        
+        contaCorrenteDoJõao.logarSaldoAtual();
         }
 }

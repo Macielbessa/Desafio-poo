@@ -24,6 +24,5 @@ public class ContaCorrente {
 
     public void logarSaldoAtual(){
         System.out.println(this.saldo);
-
     }
 }
