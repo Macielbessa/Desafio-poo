@@ -3,7 +3,7 @@ package com.basico.desafiopoo;
 import java.math.BigDecimal;
 
 public class CaixaEletronico {
-    public void sacarSaldo(ContaCorrente corrente, BigDecimal valorParaSacar) throws Exception{
+    public void sacarSaldo(ContaCorrente corrente, BigDecimal valorParaSacar) throws ExceptionDoSaldo {
 
             if (valorParaSacar.compareTo(corrente.getSaldo()) > 0) {
                 BigDecimal valorAtual = corrente.getSaldo().subtract(valorParaSacar);
@@ -11,7 +11,7 @@ public class CaixaEletronico {
                 System.out.println("saque pare retirar: R$" + valorParaSacar);
                 System.out.println("saldo atualizado de: R$ " + corrente.getSaldo());
             } else {
-                throw new Exception("Sem saldo");
+                throw new ExceptionDoSaldo("Sem saldo");
             }
        }
 }

@@ -3,7 +3,7 @@ package com.basico.desafiopoo;
 import java.math.BigDecimal;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws ExceptionDoSaldo {
         ContaCorrente contaCorrenteDoJõao = new ContaCorrente();
 
         contaCorrenteDoJõao.setCliente("João"); // cliente
