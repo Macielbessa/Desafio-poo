@@ -14,7 +14,7 @@ public class Main {
 
             CaixaEletronico caixaEletronicoDoJoão = new CaixaEletronico();
 
-            caixaEletronicoDoJoão.depositar(contaCorrenteDoJõao, new BigDecimal(50.00 ).add(contaCorrenteDoJõao.getSaldo())); // depositando na conta
+            caixaEletronicoDoJoão.depositar(contaCorrenteDoJõao, new BigDecimal(200.00 ).add(contaCorrenteDoJõao.getSaldo())); // depositando na conta
 
             caixaEletronicoDoJoão.sacarSaldo(contaCorrenteDoJõao,new BigDecimal(50.00)); // valor a ser sacado da conta do cliente
 
