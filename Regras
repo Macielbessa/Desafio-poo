@@ -1,0 +1,3 @@
+ 0 : se o valor deste BigDecimal for igual ao do objeto BigDecimal passado como parâmetro.
+ 1 : se o valor deste BigDecimal for maior que o do objeto BigDecimal passado como parâmetro.
+-1 : se o valor deste BigDecimal for menor que o do objeto BigDecimal passado como parâmetro.
