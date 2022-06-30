@@ -8,15 +8,17 @@ public class CaixaEletronico {
             BigDecimal valorAtual = corrente.getSaldo().subtract(valorParaSacar);
             corrente.setSaldo(valorAtual);
             System.out.println("quero sacar : R$" + valorParaSacar);
-            System.out.println("saldo atualizado de : " + corrente.getSaldo());
+            System.out.println("saldo atualizado de : R$ " + corrente.getSaldo());
         } else {
             throw new ExceptionDoSaldo("Sem saldo");
         }
     }
 
-    public void depositar(ContaCorrente conta, BigDecimal valorParaDepositar) throws ExceptionDoDeposito {
-        if (valorParaDepositar.compareTo(valorParaDepositar) < 1) {
-            System.out.println("valor para depositar: R$" + valorParaDepositar);
+    public void deposito (ContaCorrente conta, BigDecimal valorParaDepositar) throws ExceptionDoDeposito {
+        if (valorParaDepositar.compareTo(conta.getSaldo()) < 0){
+            BigDecimal valorDeDeposito = conta.getSaldo().add(valorParaDepositar);
+            conta.setSaldo(valorDeDeposito);
+            System.out.println("valor para depositar de: R$" + valorParaDepositar);
         } else {
             throw new ExceptionDoDeposito("Deposito negado");
         }
