@@ -14,11 +14,10 @@ public class CaixaEletronico {
         }
     }
 
+
     public void deposito (ContaCorrente conta, BigDecimal valorParaDepositar) throws ExceptionDoDeposito {
-        if (valorParaDepositar.compareTo(conta.getSaldo()) > 1){
-            BigDecimal valorDeDeposito = conta.getSaldo().add(valorParaDepositar);
-            conta.setSaldo(valorDeDeposito);
-            System.out.println("valor para depositar de: R$" + valorParaDepositar);
+        if (valorParaDepositar.compareTo(new BigDecimal("1000")) < 1){
+            System.out.println("oi");
         } else {
             throw new ExceptionDoDeposito("Deposito negado");
         }
